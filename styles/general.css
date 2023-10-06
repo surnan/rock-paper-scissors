@@ -1,6 +1,6 @@
 body {
   background-color: black;
-  padding: 25px 0 0 0;
+  padding: 5px 0 1000px 0;
 }
 .game-title {
   font-size: 30px;
@@ -40,6 +40,14 @@ body {
   /* needs to be declared before the child
       objects in CSS file to put them under 'center'*/
   text-align: center;
+}
+
+
+.tempContainer {
+  /* needs to be declared before the child
+      objects in CSS file to put them under 'center'*/
+  text-align: center;
+  padding-top: 10px;
 }
 
 .reset-button {

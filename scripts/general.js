@@ -13,33 +13,25 @@ function playGame(playerButton) {
   const computerAction = getComputerMove(playerAction);
 
   let temp = getGameResults(playerAction, computerAction);
-  console.log(`player: ${playerAction} --- action: ${computerAction} -- ${temp}`);
+  console.log(
+    `player: ${playerAction} - computer: ${computerAction} - ${temp}`);
+
+    afterGamePics();
 }
 
 function getGameResults(playerAction, computerAction) {
-  if (playerAction === computerAction) {
-    return 'tie';
-  }
+  if (playerAction === computerAction) {return 'tie';}
 
   if (playerAction === 'rock') {
-    if (computerAction === 'paper') {
-      return 'lose';
-    }
-  }
+    if (computerAction === 'paper') {return 'lose';}}
 
   if (playerAction === 'paper') {
-    if (computerAction === 'scissors') {
-      return 'lose';
-    }
-  }
+    if (computerAction === 'scissors') {return 'lose';}}
 
   if (playerAction === 'scissors') {
-    if (computerAction === 'rock') {
-      return 'lose';
-    }
-  }
+    if (computerAction === 'rock') {return 'lose';}}
 
-  return('win');
+  return ('win');
 }
 
 function getComputerMove(temp3) {
@@ -48,3 +40,7 @@ function getComputerMove(temp3) {
   if (temp > 0.66) { return 'scissors'; }
   return 'paper'
 }
+
+function afterGamePics() {
+  document.querySelector('.js-destination').innerHTML =
+  '<p class="game-title"> Good Bye </p> <button class="hand-emoji-button js-rock-button"><img class="hand-emoji-pic" src="/images/rock-emoji.png"></button>}'};
