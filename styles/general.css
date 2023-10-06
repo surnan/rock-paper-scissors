@@ -2,13 +2,6 @@ body {
   background-color: black;
   padding: 25px 0 0 0;
 }
-
-.under-hand-emoji-div {
-  /* needs to be declared before the child
-      objects in CSS file to put them under 'center'*/
-  text-align: center;
-}
-
 .game-title {
   font-size: 30px;
   font-weight: 700;
@@ -17,17 +10,16 @@ body {
 }
 
 .hand-emoji-pic {
-  /*  set size on pic and button resizes.
+  /*  set size on pic and button auto-resizes.
       if size set on button then image will exceed boundaries
       and need to be reset anyway*/
   height: 50px;
   width: 50px;
-
   object-fit: fill;
-
 }
 
-.hand-emoji-button {
+
+.hand-emoji-button{
   background-color: black;
   border-color: white;
   border-radius: 55px;
@@ -41,6 +33,13 @@ body {
   display: flex;
   justify-content: center;
   column-gap: 20px;
+}
+
+
+.under-hand-emoji-div {
+  /* needs to be declared before the child
+      objects in CSS file to put them under 'center'*/
+  text-align: center;
 }
 
 .reset-button {

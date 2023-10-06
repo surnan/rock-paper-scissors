@@ -7,12 +7,19 @@
 </head>
 
 <body>
-
   <p class="game-title">Rock Paper Scissors</p>
   <div class="emoji-div">
-    <button class="hand-emoji-button"><img class="hand-emoji-pic" src="/images/rock-emoji.png"> </button>
-    <button class="hand-emoji-button"><img class="hand-emoji-pic" src="/images/paper-emoji.png"> </button>
-    <button class="hand-emoji-button"><img class="hand-emoji-pic" src="/images/scissors-emoji.png"> </button>
+    <button class="hand-emoji-button js-rock-button">
+      <img class="hand-emoji-pic" src="/images/rock-emoji.png">
+    </button>
+
+    <button class="hand-emoji-button js-paper-button">
+      <img class="hand-emoji-pic" src="/images/paper-emoji.png">
+    </button>
+
+    <button class="hand-emoji-button js-scissors-button">
+      <img class="hand-emoji-pic" src="/images/scissors-emoji.png">
+    </button>
   </div>
 
   <div class="under-hand-emoji-div">
@@ -22,8 +29,7 @@
     <button class="reset-button">Reset Score</button>
   </div>
 
-
-
+  <script src="scripts/general.js"></script>
 </body>
 
 </html>
